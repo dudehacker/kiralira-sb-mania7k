@@ -1,0 +1,66 @@
+﻿FormatVersion: 7
+Name: "char3_duet1_renna_right"
+Script: "Character"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "29662"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  EndTime:
+    Type: "System.Int32"
+    Value: "33876"
+    DisplayName: "End Time"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb\\char\\renna stage.png"
+    DisplayName: "Sprite Path"
+    BeginsGroup: "Sprite"
+  FacePath:
+    Type: "System.String"
+    Value: "sb\\char\\st4_s0_1_1.png"
+    DisplayName: "Face Path"
+  FrameColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.5867522,0.5294118,0.9803922,0.4285687"
+    DisplayName: "Frame Color"
+  FramePath:
+    Type: "System.String"
+    Value: "sb\\frame.png"
+    DisplayName: "Frame Path"
+  offset:
+    Type: "OpenTK.Vector2"
+    Value: "670,240"
+  FaceOffset:
+    Type: "OpenTK.Vector2"
+    Value: "0,-160"
+    DisplayName: "Face Offset"
+  FaceScale:
+    Type: "System.Double"
+    Value: "0.133"
+    DisplayName: "Face Scale"
+  Opacity:
+    Type: "System.Double"
+    Value: "1"
+    BeginsGroup: "Transition"
+  FadeDuration:
+    Type: "System.Int32"
+    Value: "200"
+    DisplayName: "Fade Duration"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  30dec4f416a54916ae1535376efd5bb6:
+    Name: "Foreground"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes
+  da9447613e7049fba960a53cd49d5de2:
+    Name: "Overlay"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes

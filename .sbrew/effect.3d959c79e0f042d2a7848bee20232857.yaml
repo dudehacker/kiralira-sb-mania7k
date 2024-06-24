@@ -1,0 +1,51 @@
+﻿FormatVersion: 7
+Name: "LightDrop 1"
+Script: "LightDrop"
+Multithreaded: No
+Config:
+  Offset:
+    Type: "System.Int32"
+    Value: "0"
+  StartTime:
+    Type: "System.Int32"
+    Value: "168"
+    DisplayName: "Start Time"
+  x:
+    Type: "System.Int32"
+    Value: "100"
+  y:
+    Type: "System.Int32"
+    Value: "370"
+  intro:
+    Type: "System.Int32"
+    Value: "100"
+  outro:
+    Type: "System.Int32"
+    Value: "2000"
+  hue1:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.5294118,0.8078431,0.9803922,1"
+    DisplayName: "hue 1"
+  hue2:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "1,0.4164261,0.9784117,1"
+    DisplayName: "hue 2"
+  NoteSprite:
+    Type: "System.String"
+    Value: "sb/pl.png"
+    DisplayName: "Note Sprite"
+  LightSprite:
+    Type: "System.String"
+    Value: "sb/l.png"
+    DisplayName: "Light Sprite"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  53876a940d5e48e38a4fa39e8f39522a:
+    Name: "Main"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

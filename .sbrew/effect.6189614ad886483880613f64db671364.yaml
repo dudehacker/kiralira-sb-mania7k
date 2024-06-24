@@ -1,0 +1,108 @@
+﻿FormatVersion: 7
+Name: "InMyHeart 1"
+Script: "InMyHeart"
+Multithreaded: No
+Config:
+  fontName:
+    Type: "System.String"
+    Value: "ass\\DokiDokiFantasia.otf"
+    DisplayName: "font Name"
+  fontSize:
+    Type: "System.Int32"
+    Value: "70"
+    DisplayName: "font Size"
+  fontscale:
+    Type: "System.Single"
+    Value: "1"
+  fontstyle:
+    Type: "System.Int32"
+    Value: "0"
+    AllowedValues:
+      Regular: "0"
+      Bold: "1"
+      Italic: "2"
+      Underline: "4"
+      Strikeout: "8"
+  heartEasing:
+    Type: "System.Int32"
+    Value: "5"
+    DisplayName: "heart Easing"
+    AllowedValues:
+      None: "0"
+      Out: "1"
+      In: "2"
+      InQuad: "3"
+      OutQuad: "4"
+      InOutQuad: "5"
+      InCubic: "6"
+      OutCubic: "7"
+      InOutCubic: "8"
+      InQuart: "9"
+      OutQuart: "10"
+      InOutQuart: "11"
+      InQuint: "12"
+      OutQuint: "13"
+      InOutQuint: "14"
+      InSine: "15"
+      OutSine: "16"
+      InOutSine: "17"
+      InExpo: "18"
+      OutExpo: "19"
+      InOutExpo: "20"
+      InCirc: "21"
+      OutCirc: "22"
+      InOutCirc: "23"
+      InElastic: "24"
+      OutElastic: "25"
+      OutElasticHalf: "26"
+      OutElasticQuarter: "27"
+      InOutElastic: "28"
+      InBack: "29"
+      OutBack: "30"
+      InOutBack: "31"
+      InBounce: "32"
+      OutBounce: "33"
+      InOutBounce: "34"
+  Padding:
+    Type: "OpenTK.Vector2"
+    Value: "0,40"
+  bgColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.8,0.5730706,0.7482437,0.4849359"
+    DisplayName: "bg Color"
+  fontColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.2100181,0.1907248,0.2156815,0.8195047"
+    DisplayName: "font Color"
+  heartColor1:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.4313726,0.6,0.6666667,0.5610315"
+    DisplayName: "heart Color 1"
+  heartColor2:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.8,0.5764706,0.7490196,0.5553949"
+    DisplayName: "heart Color 2"
+  startTime:
+    Type: "System.Double"
+    Value: "49550"
+    DisplayName: "start Time"
+  EndTime:
+    Type: "System.Double"
+    Value: "51572"
+    DisplayName: "End Time"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  9c96d4f6415248ce8156b426f7071729:
+    Name: "Foreground"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes
+  a23faf1c35064634945da5f61bf790f9:
+    Name: ""
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes

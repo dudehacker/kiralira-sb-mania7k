@@ -1,0 +1,37 @@
+﻿FormatVersion: 7
+Name: "bg3_night"
+Script: "Background"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "105505"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  EndTime:
+    Type: "System.Int32"
+    Value: "127078"
+    DisplayName: "End Time"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb\\bg\\night town.jpg"
+    DisplayName: "Sprite Path"
+    BeginsGroup: "Sprite"
+  Opacity:
+    Type: "System.Double"
+    Value: "0.8"
+  fadeDuration:
+    Type: "System.Int32"
+    Value: "500"
+    DisplayName: "fade Duration"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  e193f2ebed7e425b92629e000d1989e7:
+    Name: "Background"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

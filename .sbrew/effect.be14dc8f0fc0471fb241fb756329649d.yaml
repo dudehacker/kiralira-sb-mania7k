@@ -1,0 +1,66 @@
+﻿FormatVersion: 7
+Name: "char1_yuna"
+Script: "Character"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "13145"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  EndTime:
+    Type: "System.Int32"
+    Value: "23426"
+    DisplayName: "End Time"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb\\char\\yuna stage.png"
+    DisplayName: "Sprite Path"
+    BeginsGroup: "Sprite"
+  FacePath:
+    Type: "System.String"
+    Value: "sb\\char\\st5_s0_1_1.png"
+    DisplayName: "Face Path"
+  FrameColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.8,0.5764706,0.7490196,1"
+    DisplayName: "Frame Color"
+  FramePath:
+    Type: "System.String"
+    Value: "sb\\frame.png"
+    DisplayName: "Frame Path"
+  offset:
+    Type: "OpenTK.Vector2"
+    Value: "510,240"
+  FaceOffset:
+    Type: "OpenTK.Vector2"
+    Value: "0,-160"
+    DisplayName: "Face Offset"
+  FaceScale:
+    Type: "System.Double"
+    Value: "0.133"
+    DisplayName: "Face Scale"
+  Opacity:
+    Type: "System.Double"
+    Value: "1"
+    BeginsGroup: "Transition"
+  FadeDuration:
+    Type: "System.Int32"
+    Value: "200"
+    DisplayName: "Fade Duration"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  73e9a195734349c1a7381b6bf445e302:
+    Name: "Foreground"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes
+  1594349ad195452c98c13c77e140d099:
+    Name: "Overlay"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes

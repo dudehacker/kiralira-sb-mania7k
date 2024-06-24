@@ -1,0 +1,37 @@
+﻿FormatVersion: 7
+Name: "bg6_town2"
+Script: "Background"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "186404"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  EndTime:
+    Type: "System.Int32"
+    Value: "197190"
+    DisplayName: "End Time"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb\\bg\\town 2.jpg"
+    DisplayName: "Sprite Path"
+    BeginsGroup: "Sprite"
+  Opacity:
+    Type: "System.Double"
+    Value: "0.8"
+  fadeDuration:
+    Type: "System.Int32"
+    Value: "500"
+    DisplayName: "fade Duration"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  0791cdf55ad342c2b067d1ce50736ee8:
+    Name: "Background"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
