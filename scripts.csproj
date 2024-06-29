@@ -66,8 +66,8 @@
     <Compile Include="Lyrics.cs" />
     <Compile Include="SceneHeart.cs" />
     <Compile Include="SceneHeartParticles.cs" />
-    <Compile Include="StageLight copy.cs" />
     <Compile Include="StageLight.cs" />
+    <Compile Include="StageTopLight.cs" />
     <Compile Include="TitleLogo.cs" />
     <Compile Include="scriptslibrary/Constants.cs" />
   </ItemGroup>

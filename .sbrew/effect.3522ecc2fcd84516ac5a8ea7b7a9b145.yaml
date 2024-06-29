@@ -28,11 +28,6 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  9413e937a0ed4d07ba3116650975d0e0:
-    Name: "Main"
-    OsbLayer: Background
-    DiffSpecific: No
-    Visible: Yes
   762be2127e9c46219525aae5fc2f7c53:
     Name: "Background"
     OsbLayer: Background

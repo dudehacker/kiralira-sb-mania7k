@@ -1,15 +1,8 @@
-using OpenTK;
+
 using OpenTK.Graphics;
-using StorybrewCommon.Mapset;
+
 using StorybrewCommon.Scripting;
 using StorybrewCommon.Storyboarding;
-using StorybrewCommon.Storyboarding.Util;
-using StorybrewCommon.Subtitles;
-using StorybrewCommon.Util;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Drawing;
 
 namespace StorybrewScripts
 {
@@ -26,19 +19,7 @@ namespace StorybrewScripts
 
         [Configurable] public string LightSprite = "sb/l.png";
 
-        private OsbSpritePools spritePools;
-        private StoryboardLayer mainLayer;
-
         public override void Generate()
-        {
-            mainLayer = GetLayer("Main");
-            using (spritePools = new OsbSpritePools(mainLayer))
-            {
-                Main();
-            }
-        }
-
-        private void Main()
         {
             topLights();
         }
@@ -47,10 +28,10 @@ namespace StorybrewScripts
         private void topLights()
         {
 
-            MakeNote(StartTime, 0, 330.0129, 1.1, 0.3, 0.6);  // left
-            MakeNote(StartTime, 336.8, 330.0129, 1.1, 0.3, 0.6); // middle
-            MakeNote(StartTime, 454.6065, 204.4903, 2.279225, 0.2196128, 0.3); // right
-      
+            MakeNote(StartTime, 0, 330.0129, 1.4, 0.3, 0.6);  // left vertical
+            MakeNote(StartTime, 336.8, 330.0129, 1.1, 0.3, 0.6); // middle vertical
+            MakeNote(StartTime, 550.8, 330.0129, 1.1, 0.3, 0.6); // right vertical
+            MakeNote(StartTime, 454.6065, 204.4903, 2.279225, 0.2196128, 0.3); // right horizontal
         }
 
 
@@ -65,11 +46,11 @@ namespace StorybrewScripts
             var light = GetLayer("Background").CreateSprite(LightSprite, OsbOrigin.Centre);
             light.Move(time, x, y);
             light.ScaleVec(time, 3.204903, 2.032258);
-            light.Color(time, color);  
+            light.Color(time, color);
             light.Rotate(time, baseAngle);
 
-            light.Fade(OsbEasing.OutCirc, time, t2, initialOpacity, newOpacity);    
-            light.Fade(OsbEasing.OutCirc, t2, t3, newOpacity, 0);    
+            light.Fade(OsbEasing.OutCirc, time, t2, initialOpacity, newOpacity);
+            light.Fade(OsbEasing.OutCirc, t2, t3, newOpacity, 0);
         }
     }
 }
