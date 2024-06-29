@@ -10,7 +10,7 @@ Config:
     BeginsGroup: "Timing"
   EndTime:
     Type: "System.Int32"
-    Value: "70449"
+    Value: "71797"
     DisplayName: "End Time"
   SpritePath:
     Type: "System.String"

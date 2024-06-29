@@ -1,27 +1,27 @@
 ﻿FormatVersion: 7
-Name: "StageTopLight 1 Blue"
+Name: "StageTopLightKiaiEnd"
 Script: "StageTopLight"
 Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "61011"
+    Value: "93370"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   IntroBeat:
     Type: "System.Double"
-    Value: "1"
+    Value: "0.2"
     DisplayName: "Intro Beat"
   OutroBeat:
     Type: "System.Double"
-    Value: "1"
+    Value: "0.2"
     DisplayName: "Outro Beat"
   Repeat:
     Type: "System.Int32"
-    Value: "1"
+    Value: "3"
   RepeatDelayBeat:
     Type: "System.Double"
-    Value: "4"
+    Value: "0.5"
     DisplayName: "Repeat Delay Beat"
   LightSprite:
     Type: "System.String"
@@ -30,7 +30,7 @@ Config:
     BeginsGroup: "Sprite"
   color:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0,1,1,1"
+    Value: "1,0.5019608,1,1"
   FrameSprite:
     Type: "System.String"
     Value: "sb/frame.png"
@@ -84,13 +84,13 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  1915ca76b90a47c6b8f99352f7570852:
-    Name: "Frame"
+  2554d01775694a259e52768001b5e3d2:
+    Name: "Background"
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
-  4551c253c60b4385be4c16baecef3c6a:
-    Name: "Background"
-    OsbLayer: Foreground
+  0647217a88a74635bb7f71322357f5ff:
+    Name: "Frame"
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes

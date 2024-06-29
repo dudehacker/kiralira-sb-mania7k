@@ -11,12 +11,12 @@ namespace StorybrewScripts
         [Group("Timing")]
         [Configurable] public int StartTime = 51572;
         [Configurable] public int EndTime = 70449;
-        
+
         [Group("Sprite")]
         [Description("Leave empty to automatically use the map's background.")]
         [Configurable] public string SpritePath = "sb/frame.png";
         [Configurable] public Color4 color = Color4.LightSkyBlue; // 5DFFFF
-            [Configurable] public double opacity = 0.2980646;
+        [Configurable] public double opacity = 0.2980646;
 
         public override void Generate()
         {

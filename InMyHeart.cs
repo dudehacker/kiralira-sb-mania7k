@@ -26,7 +26,7 @@ namespace StorybrewScripts
         public OsbEasing heartEasing = OsbEasing.InOutSine;
 
         [Configurable]
-        public Vector2 Padding= Vector2.Zero;
+        public Vector2 Padding = Vector2.Zero;
 
         [Configurable]
         public Color4 bgColor = Color4.LightSkyBlue; //#FEBA98
@@ -47,7 +47,7 @@ namespace StorybrewScripts
         public double EndTime = 97624;
 
         public double halfBeat = Constants.beatLength * 0.5;
-        
+
         public override void Generate()
         {
 
@@ -59,7 +59,7 @@ namespace StorybrewScripts
             tempBG.Color(startTime, bgColor);
 
             // Outer Heart
-            var startTime2 = startTime  + halfBeat; //94669;
+            var startTime2 = startTime + halfBeat; //94669;
             var endTime = EndTime - Constants.beatLength * 1.5; // 96942;
             var outHeart = GetLayer("").CreateSprite("sb/particles/heart.png", OsbOrigin.Centre);
             outHeart.Fade(startTime2 - halfBeat, startTime2, 0, 1);
@@ -74,12 +74,12 @@ namespace StorybrewScripts
             inHeart.Scale(startTime2, endTime, inHeart.ScaleAt(startTime2).X, Constants.screenScale * 1.05);
             inHeart.Fade(endTime, 0);
 
-            var endTime2 = endTime -  Constants.beatLength; // 97169
+            var endTime2 = endTime - Constants.beatLength; // 97169
 
             // Inner Heart
             heart(endTime2, Color4.White, false);
             heart(endTime2 + Constants.beatLength, heartColor2, false); // 97624
-            heart(endTime2 + 2*Constants.beatLength, heartColor1, true);
+            heart(endTime2 + 2 * Constants.beatLength, heartColor1, true);
 
             // Particles 
             generateParticles(startTime, endTime2, "sb/particles/star.png", 30, true);
@@ -87,7 +87,7 @@ namespace StorybrewScripts
 
             // Lyrics
             var inMyHeart = LoadSubtitles("ass/toketeku.ass");
-            FontGenerator font = LoadFont("sb/lyrics/jpFont", new FontDescription() 
+            FontGenerator font = LoadFont("sb/lyrics/jpFont", new FontDescription()
             {
                 FontPath = fontName,
                 FontSize = fontSize,
@@ -98,7 +98,7 @@ namespace StorybrewScripts
                 EffectsOnly = false,
                 Debug = false,
             });
-            generateLyrics(font, inMyHeart); 
+            generateLyrics(font, inMyHeart);
         }
         private void generateParticles(double startTime, double endTime, string path, int particleNum, bool rotate)
         {
@@ -109,14 +109,14 @@ namespace StorybrewScripts
                 Vector2 distance = Vector2.Subtract(center, randomCenter);
 
                 var particle = GetLayer("Foreground").CreateSprite(path, OsbOrigin.Centre);
-                
+
                 // Spreading stuff randomly, then expanding that random position by a distance
                 particle.Scale(startTime, Random(0.2, 0.8));
                 if (rotate) particle.Rotate(startTime, endTime, 0, Random(-Math.PI, Math.PI));
                 particle.Fade(heartEasing, startTime, startTime + halfBeat, 0, 1);
                 particle.Move(heartEasing, startTime, startTime + halfBeat, center, randomCenter);
                 particle.Move(heartEasing, startTime + halfBeat, endTime - halfBeat, particle.PositionAt(startTime + halfBeat), Vector2.Subtract(particle.PositionAt(startTime + halfBeat), distance));
-                
+
                 // Moving stuff back to center
                 distance = Vector2.Subtract(center, particle.PositionAt(endTime - halfBeat));
                 particle.Move(heartEasing, endTime - halfBeat, endTime, particle.PositionAt(endTime - halfBeat), Vector2.Add(particle.PositionAt(endTime - halfBeat), distance));
@@ -124,7 +124,7 @@ namespace StorybrewScripts
                 particle.Fade(endTime - halfBeat, endTime, 1, 0);
             }
         }
-        
+
         private void heart(double startTime, Color4 color, bool end)
         {
             var heart = GetLayer("").CreateSprite("sb/particles/heart.png", OsbOrigin.Centre);
@@ -134,8 +134,9 @@ namespace StorybrewScripts
             if (end)
             {
                 heart.Fade(startTime + Constants.beatLength * 1, 0);
-            }else 
-                heart.Fade(startTime + Constants.beatLength * 2, 0);  
+            }
+            else
+                heart.Fade(startTime + Constants.beatLength * 2, 0);
         }
 
         private void generateLyrics(FontGenerator font, SubtitleSet subtitles)
@@ -163,18 +164,18 @@ namespace StorybrewScripts
                         {
                             var position = new Vector2(letterX, (float)(letterY - lineHeight * 0.5)) // Moving Lyics To Y center
                                 + texture.OffsetFor(OsbOrigin.Centre) * fontscale;
-                            
+
                             var distance = Vector2.Subtract(position, center); // Distance between each letter and center
 
                             var sprite = GetLayer("").CreateSprite(texture.Path, OsbOrigin.Centre);
                             // Move away from center
                             sprite.MoveY(subtitleLine.StartTime, position.Y);
-                            sprite.MoveX(subtitleLine.StartTime, subtitleLine.EndTime, position.X, position.X + distance.X * 0.25); 
+                            sprite.MoveX(subtitleLine.StartTime, subtitleLine.EndTime, position.X, position.X + distance.X * 0.25);
                             sprite.Scale(subtitleLine.StartTime, fontscale);
                             sprite.Fade(subtitleLine.StartTime, subtitleLine.StartTime + Constants.beatLength * 0.25, 0, 1);
                             // Move back to center
                             distance = Vector2.Subtract(sprite.PositionAt(subtitleLine.EndTime), center);
-                            sprite.MoveX(subtitleLine.EndTime, subtitleLine.EndTime + Constants.beatLength * 0.25, sprite.PositionAt(subtitleLine.EndTime).X, Vector2.Subtract(sprite.PositionAt(subtitleLine.EndTime), distance).X); 
+                            sprite.MoveX(subtitleLine.EndTime, subtitleLine.EndTime + Constants.beatLength * 0.25, sprite.PositionAt(subtitleLine.EndTime).X, Vector2.Subtract(sprite.PositionAt(subtitleLine.EndTime), distance).X);
                             sprite.Fade(subtitleLine.EndTime, subtitleLine.EndTime + Constants.beatLength * 0.25, 1, 0);
                             sprite.Scale(subtitleLine.EndTime, subtitleLine.EndTime + Constants.beatLength * 0.25, fontscale, 0);
                         }

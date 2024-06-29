@@ -68,7 +68,7 @@ Config:
     Value: "0,40"
   bgColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.8,0.5730706,0.7482437,0.4849359"
+    Value: "1,0.5019608,0.9999999,0.180553"
     DisplayName: "bg Color"
   fontColor:
     Type: "OpenTK.Graphics.Color4"

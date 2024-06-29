@@ -1,11 +1,11 @@
 ﻿FormatVersion: 7
-Name: "StageTopLight 1 Blue"
+Name: "StageTopLight 3 Blue"
 Script: "StageTopLight"
 Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "61011"
+    Value: "82584"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   IntroBeat:
@@ -84,13 +84,13 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  1915ca76b90a47c6b8f99352f7570852:
-    Name: "Frame"
+  2fb944cd5677492a814eecb27918fd85:
+    Name: "Background"
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
-  4551c253c60b4385be4c16baecef3c6a:
-    Name: "Background"
-    OsbLayer: Foreground
+  4d0a34662c8d43e5b59097c0c00ccc53:
+    Name: "Frame"
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes

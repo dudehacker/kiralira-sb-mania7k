@@ -62,6 +62,7 @@
     <Compile Include="InMyHeart.cs" />
     <Compile Include="KiaiChar.cs" />
     <Compile Include="KiaiFrame.cs" />
+    <Compile Include="KiaiMiddleTransition.cs" />
     <Compile Include="LightDrop.cs" />
     <Compile Include="Lyrics.cs" />
     <Compile Include="SceneHeart.cs" />

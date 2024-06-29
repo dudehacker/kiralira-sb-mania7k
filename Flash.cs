@@ -1,3 +1,4 @@
+using OpenTK.Graphics;
 using StorybrewCommon.Scripting;
 using StorybrewCommon.Storyboarding;
 using System.Linq;
@@ -17,6 +18,9 @@ namespace StorybrewScripts
         [Configurable] public string SpritePath = "";
         [Configurable] public double Opacity = 0.5499356;
 
+        [Configurable] public Color4 color = Color4.White;
+
+        [Configurable] public bool ApplyColor = false;
 
         public override void Generate()
         {
@@ -27,6 +31,10 @@ namespace StorybrewScripts
             bg.Scale(KeyFrameTime - IntroDurationMS, 480.0f / bitmap.Height);
             bg.Fade(KeyFrameTime - IntroDurationMS, KeyFrameTime, 0, Opacity);
             bg.Fade(KeyFrameTime, KeyFrameTime + OutroDurationMS, Opacity, 0);
+            if (ApplyColor)
+            {
+                bg.Color(KeyFrameTime, color);
+            }
         }
     }
 }
