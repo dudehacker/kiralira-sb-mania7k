@@ -1,0 +1,37 @@
+﻿FormatVersion: 7
+Name: "KiaiChar 1"
+Script: "KiaiChar"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "51572"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  EndTime:
+    Type: "System.Int32"
+    Value: "94044"
+    DisplayName: "End Time"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb/kiai-time.png"
+    DisplayName: "Sprite Path"
+    BeginsGroup: "Sprite"
+  fadeDuration:
+    Type: "System.Int32"
+    Value: "675"
+    DisplayName: "fade Duration"
+  scale:
+    Type: "System.Double"
+    Value: "0.463226"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  5b117fe352de45a78162318504906169:
+    Name: "Foreground"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes

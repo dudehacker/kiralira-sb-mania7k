@@ -1,0 +1,40 @@
+﻿FormatVersion: 7
+Name: "StageTopLight 2"
+Script: "StageTopLight"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "70449"
+    DisplayName: "Start Time"
+  IntroBeat:
+    Type: "System.Double"
+    Value: "0.5"
+    DisplayName: "Intro Beat"
+  OutroBeat:
+    Type: "System.Double"
+    Value: "0.5"
+    DisplayName: "Outro Beat"
+  color:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,1,1,1"
+  LightSprite:
+    Type: "System.String"
+    Value: "sb/l.png"
+    DisplayName: "Light Sprite"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  9413e937a0ed4d07ba3116650975d0e0:
+    Name: "Main"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  762be2127e9c46219525aae5fc2f7c53:
+    Name: "Background"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

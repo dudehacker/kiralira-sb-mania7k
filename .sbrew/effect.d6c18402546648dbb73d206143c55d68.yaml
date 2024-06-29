@@ -27,7 +27,7 @@ Config:
     DisplayName: "Frame Color"
   FramePath:
     Type: "System.String"
-    Value: "sb\\frame.png"
+    Value: "sb/frame.png"
     DisplayName: "Frame Path"
   offset:
     Type: "OpenTK.Vector2"
@@ -54,9 +54,9 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  30dec4f416a54916ae1535376efd5bb6:
+  313e665644fb40b9b7cec042983bd420:
     Name: "Foreground"
-    OsbLayer: Foreground
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
   da9447613e7049fba960a53cd49d5de2:

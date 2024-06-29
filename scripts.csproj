@@ -54,18 +54,21 @@
   <ItemGroup>
     <Compile Include="Background.cs" />
     <Compile Include="BgMove.cs" />
-    <Compile Include="BgRotate copy.cs" />
     <Compile Include="BgRotate.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="Flash.cs" />
     <Compile Include="Flash2.cs" />
     <Compile Include="FlashReverse.cs" />
     <Compile Include="InMyHeart.cs" />
+    <Compile Include="KiaiChar.cs" />
+    <Compile Include="KiaiFrame.cs" />
     <Compile Include="LightDrop.cs" />
     <Compile Include="Lyrics.cs" />
     <Compile Include="SceneHeart.cs" />
     <Compile Include="SceneHeartParticles.cs" />
+    <Compile Include="StageLight copy.cs" />
     <Compile Include="StageLight.cs" />
+    <Compile Include="TitleLogo.cs" />
     <Compile Include="scriptslibrary/Constants.cs" />
   </ItemGroup>
   <ItemGroup />
