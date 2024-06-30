@@ -1,0 +1,101 @@
+﻿FormatVersion: 7
+Name: "StageTopLight Kiai 3.3"
+Script: "StageTopLight"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "261910"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  IntroBeat:
+    Type: "System.Double"
+    Value: "0.2"
+    DisplayName: "Intro Beat"
+  OutroBeat:
+    Type: "System.Double"
+    Value: "0.2"
+    DisplayName: "Outro Beat"
+  Repeat:
+    Type: "System.Int32"
+    Value: "3"
+  RepeatDelayBeat:
+    Type: "System.Double"
+    Value: "0.5"
+    DisplayName: "Repeat Delay Beat"
+  LightSprite:
+    Type: "System.String"
+    Value: "sb/l.png"
+    DisplayName: "Light Sprite"
+    BeginsGroup: "Sprite"
+  color1:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "1,0.5019608,1,1"
+    DisplayName: "color 1"
+  color2:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "1,0.5019608,1,1"
+    DisplayName: "color 2"
+  FrameSprite:
+    Type: "System.String"
+    Value: "sb/frame.png"
+    DisplayName: "Frame Sprite"
+  FrameOppacity:
+    Type: "System.Double"
+    Value: "0.2980646"
+    DisplayName: "Frame Oppacity"
+  easing:
+    Type: "System.Int32"
+    Value: "22"
+    AllowedValues:
+      None: "0"
+      Out: "1"
+      In: "2"
+      InQuad: "3"
+      OutQuad: "4"
+      InOutQuad: "5"
+      InCubic: "6"
+      OutCubic: "7"
+      InOutCubic: "8"
+      InQuart: "9"
+      OutQuart: "10"
+      InOutQuart: "11"
+      InQuint: "12"
+      OutQuint: "13"
+      InOutQuint: "14"
+      InSine: "15"
+      OutSine: "16"
+      InOutSine: "17"
+      InExpo: "18"
+      OutExpo: "19"
+      InOutExpo: "20"
+      InCirc: "21"
+      OutCirc: "22"
+      InOutCirc: "23"
+      InElastic: "24"
+      OutElastic: "25"
+      OutElasticHalf: "26"
+      OutElasticQuarter: "27"
+      InOutElastic: "28"
+      InBack: "29"
+      OutBack: "30"
+      InOutBack: "31"
+      InBounce: "32"
+      OutBounce: "33"
+      InOutBounce: "34"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  78d7c3f66e17412da5c5da7b47f9fd3f:
+    Name: "Background"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  26bde994546e4dfe8e5a81bfaf9fdcdb:
+    Name: "Frame"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

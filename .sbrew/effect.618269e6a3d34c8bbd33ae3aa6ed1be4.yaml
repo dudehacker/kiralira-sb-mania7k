@@ -1,0 +1,44 @@
+﻿FormatVersion: 7
+Name: "Kiai 3 Flash"
+Script: "Flash"
+Multithreaded: No
+Config:
+  IntroDurationMS:
+    Type: "System.Int32"
+    Value: "337"
+    DisplayName: "Intro Duration MS"
+    BeginsGroup: "Timing"
+  KeyFrameTime:
+    Type: "System.Int32"
+    Value: "252471"
+    DisplayName: "Key Frame Time"
+  OutroDurationMS:
+    Type: "System.Int32"
+    Value: "337"
+    DisplayName: "Outro Duration MS"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb\\White.jpg"
+    DisplayName: "Sprite Path"
+    BeginsGroup: "Sprite"
+  Opacity:
+    Type: "System.Double"
+    Value: "0.6779355"
+  color:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.5019608,1,1,1"
+  ApplyColor:
+    Type: "System.Boolean"
+    Value: "True"
+    DisplayName: "Apply Color"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  4dfe0bb91543441eb47de56a61dcfcbe:
+    Name: "Foreground"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
