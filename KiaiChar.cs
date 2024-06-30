@@ -9,7 +9,7 @@ namespace StorybrewScripts
         [Group("Timing")]
         [Configurable] public int StartTime = 51572;
         [Configurable] public int EndTime = 94044;
-        
+
         [Group("Sprite")]
         [Description("Leave empty to automatically use the map's background.")]
         [Configurable] public string SpritePath = "sb/kiai-time.png";

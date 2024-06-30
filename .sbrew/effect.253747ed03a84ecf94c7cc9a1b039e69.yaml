@@ -1,16 +1,16 @@
 ﻿FormatVersion: 7
-Name: "Kiai 1 Middle Flash"
+Name: "Kiai 2 Flash Blue"
 Script: "Flash"
 Multithreaded: No
 Config:
   IntroDurationMS:
     Type: "System.Int32"
-    Value: "674"
+    Value: "337"
     DisplayName: "Intro Duration MS"
     BeginsGroup: "Timing"
   KeyFrameTime:
     Type: "System.Int32"
-    Value: "73145"
+    Value: "154044"
     DisplayName: "Key Frame Time"
   OutroDurationMS:
     Type: "System.Int32"
@@ -23,13 +23,13 @@ Config:
     BeginsGroup: "Sprite"
   Opacity:
     Type: "System.Double"
-    Value: "1"
+    Value: "0.6779355"
   color:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0,0,0,0"
+    Value: "0.5019608,1,1,1"
   ApplyColor:
     Type: "System.Boolean"
-    Value: "False"
+    Value: "True"
     DisplayName: "Apply Color"
   RandomSeed:
     Type: "System.Int32"
@@ -37,8 +37,8 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  32e6dc768c334a2c905bfb30159cccf9:
+  877382a5a67645e98376afd4021e1128:
     Name: "Foreground"
-    OsbLayer: Foreground
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes

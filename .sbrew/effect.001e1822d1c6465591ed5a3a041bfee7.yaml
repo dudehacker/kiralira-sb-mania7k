@@ -1,11 +1,11 @@
 ﻿FormatVersion: 7
-Name: "StageTopLight 4 Pink"
+Name: "StageTopLight Kiai 2.2"
 Script: "StageTopLight"
 Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "89662"
+    Value: "162134"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   IntroBeat:
@@ -18,7 +18,7 @@ Config:
     DisplayName: "Outro Beat"
   Repeat:
     Type: "System.Int32"
-    Value: "6"
+    Value: "2"
   RepeatDelayBeat:
     Type: "System.Double"
     Value: "2"
@@ -28,9 +28,14 @@ Config:
     Value: "sb/l.png"
     DisplayName: "Light Sprite"
     BeginsGroup: "Sprite"
-  color:
+  color1:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,1,1,1"
+    DisplayName: "color 1"
+  color2:
     Type: "OpenTK.Graphics.Color4"
     Value: "1,0.5019608,1,1"
+    DisplayName: "color 2"
   FrameSprite:
     Type: "System.String"
     Value: "sb/frame.png"
@@ -84,12 +89,12 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  242c3d1fae4c4802903b1f28a9aecdbf:
+  bbcd7bba99f44723b821dd73b08a47da:
     Name: "Background"
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
-  cf444650ef4149e1bc7570276700671f:
+  fe3fa4a3294c49918c67fd4abc841993:
     Name: "Frame"
     OsbLayer: Background
     DiffSpecific: No

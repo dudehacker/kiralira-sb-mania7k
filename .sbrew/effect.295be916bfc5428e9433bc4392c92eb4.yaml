@@ -1,16 +1,16 @@
 ﻿FormatVersion: 7
-Name: "KiaiFrame 1.1"
+Name: "KiaiFrame 2.2"
 Script: "KiaiFrame"
 Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "51572"
+    Value: "164831"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   EndTime:
     Type: "System.Int32"
-    Value: "71797"
+    Value: "186067"
     DisplayName: "End Time"
   SpritePath:
     Type: "System.String"
@@ -19,7 +19,7 @@ Config:
     BeginsGroup: "Sprite"
   color:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0,1,1,1"
+    Value: "1,0.5019608,1,1"
   opacity:
     Type: "System.Double"
     Value: "0.2980646"
@@ -29,7 +29,7 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  6ad22ebc3d1441289c35a4b3318f2f11:
+  dca37a27b6e948728ae8a948c06281a1:
     Name: "Foreground"
     OsbLayer: Foreground
     DiffSpecific: No

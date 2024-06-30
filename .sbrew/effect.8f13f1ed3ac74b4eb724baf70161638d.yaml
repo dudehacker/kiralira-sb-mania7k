@@ -30,7 +30,7 @@ Config:
     DisplayName: "Angle Change"
   hue1:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.3647059,1,1,1"
+    Value: "0,1,1,1"
     DisplayName: "hue 1"
   hue2:
     Type: "OpenTK.Graphics.Color4"

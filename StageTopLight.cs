@@ -21,9 +21,9 @@ namespace StorybrewScripts
 
         [Group("Sprite")]
         [Configurable] public string LightSprite = "sb/l.png";
-        [Configurable] public Color4 color = Color4.LightSkyBlue; // 5DFFFF
+        [Configurable] public Color4 color1 = new Color4(0, 255, 255, 255); // 5DFFFF
 
-
+        [Configurable] public Color4 color2 = new Color4(255, 128, 255, 255); // 5DFFFF
         [Configurable] public string FrameSprite = "sb/frame.png";
         [Configurable] public double FrameOppacity = 0.2980646;
 
@@ -34,24 +34,25 @@ namespace StorybrewScripts
         {
             for (var i = 0; i < Repeat; i++)
             {
-                topLights(StartTime + (int)(RepeatDelayBeat * i * BeatDuration));
+                topLights(StartTime + (int)(RepeatDelayBeat * i * BeatDuration), color1);
+                topLights(StartTime + (int)(RepeatDelayBeat * i * BeatDuration) + (int)((IntroBeat + OutroBeat) * BeatDuration), color2);
             }
 
         }
 
 
-        private void topLights(int start)
+        private void topLights(int start, Color4 color)
         {
 
-            MakeNote(start, -35, 430.0129, 1.4, 0.3, 0.6);  // left vertical
-            MakeNote(start, 336.8, 330.0129, 1.1, 0.3, 0.6); // middle vertical
-            MakeNote(start, 518, 270.0129, 1.05, 0.3, 0.6); // right vertical
-            MakeNote(start, 454.6065, 204.4903, 2.279225, 0.2196128, 0.3); // right horizontal
-            makeFrame(start, FrameOppacity);
+            MakeNote(start, -35, 430.0129, 1.4, 0.3, 0.6, color);  // left vertical
+            MakeNote(start, 336.8, 330.0129, 1.1, 0.3, 0.6, color); // middle vertical
+            MakeNote(start, 518, 270.0129, 1.05, 0.3, 0.6, color); // right vertical
+            MakeNote(start, 454.6065, 204.4903, 2.279225, 0.2196128, 0.3, color); // right horizontal
+            makeFrame(start, FrameOppacity, color);
         }
 
 
-        private void MakeNote(int time, double x, double y, double baseAngle, double initialOpacity, double newOpacity)
+        private void MakeNote(int time, double x, double y, double baseAngle, double initialOpacity, double newOpacity, Color4 color)
         {
 
             var t2 = time + IntroBeat * BeatDuration;
@@ -69,7 +70,7 @@ namespace StorybrewScripts
             light.Fade(easing, t2, t3, newOpacity, 0);
         }
 
-        private void makeFrame(int time, double opacity)
+        private void makeFrame(int time, double opacity, Color4 color)
         {
             var t2 = time + IntroBeat * BeatDuration;
             var t3 = t2 + OutroBeat * BeatDuration;
