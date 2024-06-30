@@ -43,13 +43,13 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  18c08c0708e94761b439020e2d7b9134:
-    Name: "Foreground"
-    OsbLayer: Background
-    DiffSpecific: No
-    Visible: Yes
   0775bb9c7cc04b6fab2908a223076ea4:
     Name: "KiaiMidTransitionFrame"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes
+  18c08c0708e94761b439020e2d7b9134:
+    Name: "Foreground"
     OsbLayer: Foreground
     DiffSpecific: No
     Visible: Yes
