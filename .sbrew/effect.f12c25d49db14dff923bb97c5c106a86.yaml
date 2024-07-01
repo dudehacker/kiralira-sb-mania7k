@@ -1,20 +1,20 @@
 ﻿FormatVersion: 7
-Name: "InMyHeart 1"
+Name: "InMyHeart 1.5"
 Script: "InMyHeart"
 Multithreaded: No
 Config:
   startTime:
     Type: "System.Double"
-    Value: "49550"
+    Value: "141910"
     DisplayName: "start Time"
     BeginsGroup: "Timing"
   EndTime:
     Type: "System.Double"
-    Value: "51572"
+    Value: "143258"
     DisplayName: "End Time"
   LyricsPath:
     Type: "System.String"
-    Value: "ass/toketeku.ass"
+    Value: "ass/kiai2.ass"
     DisplayName: "Lyrics Path"
     BeginsGroup: "Font"
   fontName:
@@ -82,19 +82,19 @@ Config:
     Value: "0,40"
   bgColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "1,0.5019608,0.7254903,1"
+    Value: "1,0.5019608,0.7254902,1"
     DisplayName: "bg Color"
   fontColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.3045608,0.1528776,0.2209559,1"
+    Value: "0.3019608,0.1490196,0.2196078,1"
     DisplayName: "font Color"
   heartColor1:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.4313726,0.6,0.6666667,0.5610315"
+    Value: "0.4313726,0.6,0.6666667,0.5607843"
     DisplayName: "heart Color 1"
   heartColor2:
     Type: "OpenTK.Graphics.Color4"
-    Value: "1,0.5019608,0.7254903,1"
+    Value: "1,0.5019608,0.7254902,1"
     DisplayName: "heart Color 2"
   RandomSeed:
     Type: "System.Int32"
@@ -102,18 +102,18 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  a720164e91fd432493164e08f05b4471:
+  932b204640064795a8d7aae26ada0a9d:
     Name: "temp"
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
-  a23faf1c35064634945da5f61bf790f9:
+  9919fabc386f4e5593dcc920899d8ed5:
     Name: ""
-    OsbLayer: Foreground
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
-  9c96d4f6415248ce8156b426f7071729:
+  b042db9f5ffc4ac7bbd73a9728cf766b:
     Name: "Foreground"
-    OsbLayer: Foreground
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes

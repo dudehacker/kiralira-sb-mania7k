@@ -10,6 +10,15 @@ namespace StorybrewScripts
 {
     public class InMyHeart : StoryboardObjectGenerator
     {
+        [Group("Timing")]
+        [Configurable] public double startTime = 94442;
+
+        [Configurable] public double EndTime = 97624;
+
+        [Group("Font")]
+
+        [Configurable] public string LyricsPath = "ass/toketeku.ass";
+
         [Configurable]
         public string fontName = "Gabriola";
 
@@ -40,11 +49,7 @@ namespace StorybrewScripts
         [Configurable]
         public Color4 heartColor2 = Color4.Orange; //#B3DFFF
 
-        [Configurable]
-        public double startTime = 94442;
 
-        [Configurable]
-        public double EndTime = 97624;
 
         public double halfBeat = Constants.beatLength * 0.5;
 
@@ -52,7 +57,7 @@ namespace StorybrewScripts
         {
 
             // Temporary Background
-            var tempBG = GetLayer("").CreateSprite("sb/pixel.png", OsbOrigin.Centre);
+            var tempBG = GetLayer("temp").CreateSprite("sb/pixel.png", OsbOrigin.Centre);
             tempBG.ScaleVec(startTime, 854, 480);
             tempBG.Fade(startTime - halfBeat, startTime, 0, 1);
             tempBG.Fade(EndTime, 0);
@@ -86,7 +91,7 @@ namespace StorybrewScripts
             generateParticles(startTime, endTime2, "sb/particles/float.png", 30, false);
 
             // Lyrics
-            var inMyHeart = LoadSubtitles("ass/toketeku.ass");
+            var inMyHeart = LoadSubtitles(LyricsPath);
             FontGenerator font = LoadFont("sb/lyrics/jpFont", new FontDescription()
             {
                 FontPath = fontName,

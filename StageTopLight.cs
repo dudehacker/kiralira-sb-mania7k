@@ -44,8 +44,8 @@ namespace StorybrewScripts
         private void topLights(int start, Color4 color)
         {
 
-            MakeNote(start, -35, 430.0129, 1.4, 0.3, 0.6, color);  // left vertical
-            MakeNote(start, 336.8, 330.0129, 1.1, 0.3, 0.6, color); // middle vertical
+            MakeNote(start, 40, 460, 1.2, 0.3, 0.6, color);  // left vertical
+            MakeNote(start, 285, 360.0129, 1.28, 0.3, 0.6, color); // middle vertical
             MakeNote(start, 518, 270.0129, 1.05, 0.3, 0.6, color); // right vertical
             MakeNote(start, 454.6065, 204.4903, 2.279225, 0.2196128, 0.3, color); // right horizontal
             makeFrame(start, FrameOppacity, color);

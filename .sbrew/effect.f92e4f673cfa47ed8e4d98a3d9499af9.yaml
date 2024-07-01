@@ -1,5 +1,5 @@
 ﻿FormatVersion: 7
-Name: "Flash2 2"
+Name: "Flash2 4"
 Script: "Flash2"
 Multithreaded: No
 Config:
@@ -10,7 +10,7 @@ Config:
     BeginsGroup: "Timing"
   KeyFrameTime:
     Type: "System.Int32"
-    Value: "5730"
+    Value: "235954"
     DisplayName: "Key Frame Time"
   OutroDurationMS:
     Type: "System.Int32"
@@ -34,8 +34,8 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  55282a5f2db44197b2a5e6ec5cc95bc6:
+  739ee7c9bb06450ea2d108ecd4470da4:
     Name: "Foreground"
-    OsbLayer: Foreground
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
