@@ -40,6 +40,10 @@ Config:
     Type: "System.Double"
     Value: "0.133"
     DisplayName: "Face Scale"
+  ZoomFactor:
+    Type: "System.Double"
+    Value: "0"
+    DisplayName: "Zoom Factor"
   Opacity:
     Type: "System.Double"
     Value: "1"
