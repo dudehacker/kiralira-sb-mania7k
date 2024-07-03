@@ -1,35 +1,35 @@
 ﻿FormatVersion: 7
-Name: "bg3_night"
+Name: "bg4.1_snow2"
 Script: "Background"
 Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "105505"
+    Value: "132471"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   EndTime:
     Type: "System.Int32"
-    Value: "127078"
+    Value: "137328"
     DisplayName: "End Time"
   SpritePath:
     Type: "System.String"
-    Value: "sb\\bg\\night town.jpg"
+    Value: "sb\\bg\\snow-2.jpg"
     DisplayName: "Sprite Path"
     BeginsGroup: "Sprite"
   Opacity:
     Type: "System.Double"
-    Value: "0.8"
+    Value: "1"
   fadeDuration:
     Type: "System.Int32"
-    Value: "500"
+    Value: "200"
     DisplayName: "fade Duration"
   scale:
     Type: "System.Double"
-    Value: "1"
+    Value: "1.1"
   endScale:
     Type: "System.Double"
-    Value: "1"
+    Value: "1.1"
     DisplayName: "end Scale"
   scrollX:
     Type: "System.Double"
@@ -37,7 +37,7 @@ Config:
     DisplayName: "scroll X"
   scrollY:
     Type: "System.Double"
-    Value: "0"
+    Value: "20"
     DisplayName: "scroll Y"
   rotationRad:
     Type: "System.Double"
@@ -49,7 +49,7 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  e193f2ebed7e425b92629e000d1989e7:
+  99e96b1ceb83463e9575eedefaa574b8:
     Name: "Background"
     OsbLayer: Background
     DiffSpecific: No

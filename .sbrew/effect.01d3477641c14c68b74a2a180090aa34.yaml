@@ -24,6 +24,25 @@ Config:
     Type: "System.Int32"
     Value: "500"
     DisplayName: "fade Duration"
+  scale:
+    Type: "System.Double"
+    Value: "1"
+  endScale:
+    Type: "System.Double"
+    Value: "1"
+    DisplayName: "end Scale"
+  scrollX:
+    Type: "System.Double"
+    Value: "0"
+    DisplayName: "scroll X"
+  scrollY:
+    Type: "System.Double"
+    Value: "0"
+    DisplayName: "scroll Y"
+  rotationRad:
+    Type: "System.Double"
+    Value: "0"
+    DisplayName: "rotation Rad"
   RandomSeed:
     Type: "System.Int32"
     Value: "0"
