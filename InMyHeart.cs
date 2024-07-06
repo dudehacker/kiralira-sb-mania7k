@@ -92,7 +92,7 @@ namespace StorybrewScripts
 
             // Lyrics
             var inMyHeart = LoadSubtitles(LyricsPath);
-            FontGenerator font = LoadFont("sb/lyrics/jpFont", new FontDescription()
+            FontGenerator font = LoadFont("sb/lyrics", new FontDescription()
             {
                 FontPath = fontName,
                 FontSize = fontSize,

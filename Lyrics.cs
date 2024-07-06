@@ -14,6 +14,8 @@ namespace StorybrewScripts
         [Description("Path to a .sbv, .srt, .ass or .ssa file in your project's folder.\nThese can be made with a tool like aegisub.")]
         [Configurable] public string SubtitlesPath = "lyrics.srt";
         [Configurable] public float SubtitleY = 400;
+        [Configurable] public float SubtitleYEnd = 0;
+        [Configurable] public float SubtitleX = 400;
 
         [Group("Font")]
         [Description("The name of a system font, or the path to a font relative to your project's folder.\nIt is preferable to add fonts to the project folder and use their file name rather than installing fonts.")]
@@ -148,18 +150,18 @@ namespace StorybrewScripts
                         {
                             var position = new Vector2(letterX, (float)(letterY - lineHeight * 0.5)) // Moving Lyics To Y center
                                 + texture.OffsetFor(OsbOrigin.Centre) * FontScale;
-                            
+
                             var distance = Vector2.Subtract(position, center); // Distance between each letter and center
 
                             var sprite = GetLayer("").CreateSprite(texture.Path, OsbOrigin.Centre);
                             // Move away from center
-                            sprite.MoveY(subtitleLine.StartTime, position.Y);
-                            sprite.MoveX(subtitleLine.StartTime, subtitleLine.EndTime, position.X, position.X + distance.X * 0.25); 
+                            sprite.MoveY(subtitleLine.StartTime, subtitleLine.EndTime, SubtitleY, SubtitleYEnd);
+                            sprite.MoveX(subtitleLine.StartTime, position.X + SubtitleX);
                             sprite.Scale(subtitleLine.StartTime, FontScale);
                             sprite.Fade(subtitleLine.StartTime, subtitleLine.StartTime + Constants.beatLength * 0.25, 0, 1);
                             // Move back to center
                             distance = Vector2.Subtract(sprite.PositionAt(subtitleLine.EndTime), center);
-                            sprite.MoveX(subtitleLine.EndTime, subtitleLine.EndTime + Constants.beatLength * 0.25, sprite.PositionAt(subtitleLine.EndTime).X, Vector2.Subtract(sprite.PositionAt(subtitleLine.EndTime), distance).X); 
+                            sprite.MoveX(subtitleLine.EndTime, subtitleLine.EndTime + Constants.beatLength * 0.25, sprite.PositionAt(subtitleLine.EndTime).X, Vector2.Subtract(sprite.PositionAt(subtitleLine.EndTime), distance).X);
                             sprite.Fade(subtitleLine.EndTime, subtitleLine.EndTime + Constants.beatLength * 0.25, 1, 0);
                             sprite.Scale(subtitleLine.EndTime, subtitleLine.EndTime + Constants.beatLength * 0.25, FontScale, 0);
                         }
