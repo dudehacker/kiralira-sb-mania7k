@@ -66,6 +66,7 @@
     <Compile Include="LightDrop.cs" />
     <Compile Include="Lyrics.cs" />
     <Compile Include="Particles.cs" />
+    <Compile Include="PictureDrop.cs" />
     <Compile Include="SceneHeart.cs" />
     <Compile Include="SceneHeartParticles.cs" />
     <Compile Include="StageLight.cs" />
