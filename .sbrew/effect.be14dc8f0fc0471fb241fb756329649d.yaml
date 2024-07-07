@@ -31,10 +31,10 @@ Config:
     DisplayName: "Frame Path"
   offset:
     Type: "OpenTK.Vector2"
-    Value: "510,240"
+    Value: "320,400"
   FaceOffset:
     Type: "OpenTK.Vector2"
-    Value: "0,-160"
+    Value: "0,-300"
     DisplayName: "Face Offset"
   FaceScale:
     Type: "System.Double"
@@ -42,7 +42,7 @@ Config:
     DisplayName: "Face Scale"
   ZoomFactor:
     Type: "System.Double"
-    Value: "0"
+    Value: "0.9"
     DisplayName: "Zoom Factor"
   Opacity:
     Type: "System.Double"

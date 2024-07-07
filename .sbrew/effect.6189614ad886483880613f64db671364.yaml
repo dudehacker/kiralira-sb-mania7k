@@ -104,7 +104,7 @@ Config:
 Layers:
   a720164e91fd432493164e08f05b4471:
     Name: "temp"
-    OsbLayer: Background
+    OsbLayer: Foreground
     DiffSpecific: No
     Visible: Yes
   a23faf1c35064634945da5f61bf790f9:

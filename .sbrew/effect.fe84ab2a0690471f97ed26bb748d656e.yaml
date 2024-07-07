@@ -9,7 +9,7 @@ Config:
     DisplayName: "Subtitles Path"
   SubtitleY:
     Type: "System.Single"
-    Value: "400"
+    Value: "450"
     DisplayName: "Subtitle Y"
   SubtitleYEnd:
     Type: "System.Single"

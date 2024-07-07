@@ -1,29 +1,29 @@
 ﻿FormatVersion: 7
-Name: "char2_renna"
+Name: "char4.1_yuna"
 Script: "Character"
 Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "23932"
+    Value: "35730"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   EndTime:
     Type: "System.Int32"
-    Value: "29325"
+    Value: "40786"
     DisplayName: "End Time"
   SpritePath:
     Type: "System.String"
-    Value: "sb\\char\\renna stage.png"
+    Value: "sb\\char\\yuna stage.png"
     DisplayName: "Sprite Path"
     BeginsGroup: "Sprite"
   FacePath:
     Type: "System.String"
-    Value: "sb\\char\\st4_s0_1_1.png"
+    Value: "sb\\char\\st5_s0_1_1.png"
     DisplayName: "Face Path"
   FrameColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.5294118,0.8078431,0.9803922,1"
+    Value: "0.8,0.5764706,0.7490196,1"
     DisplayName: "Frame Color"
   FramePath:
     Type: "System.String"
@@ -58,13 +58,13 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  eeb4a0f3d1f9448da3d9546791f35596:
-    Name: "Foreground"
-    OsbLayer: Foreground
+  c8d5f66654fc4b78a1f67639df863cf9:
+    Name: "Overlay"
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
-  0ef43c112c504bd7aeb02577ffd605ad:
-    Name: "Overlay"
-    OsbLayer: Foreground
+  5ea860098ac84602821f0309dace5823:
+    Name: "Foreground"
+    OsbLayer: Background
     DiffSpecific: No
     Visible: Yes

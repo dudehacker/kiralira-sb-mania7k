@@ -5,12 +5,12 @@ Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "105505"
+    Value: "104831"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   EndTime:
     Type: "System.Int32"
-    Value: "127078"
+    Value: "126741"
     DisplayName: "End Time"
   SpritePath:
     Type: "System.String"
