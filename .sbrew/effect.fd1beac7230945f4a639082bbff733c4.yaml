@@ -1,16 +1,16 @@
 ﻿FormatVersion: 7
-Name: "char6.1_renna"
+Name: "char7.1_renna"
 Script: "Character"
 Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "127078"
+    Value: "230224"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   EndTime:
     Type: "System.Int32"
-    Value: "132134"
+    Value: "240337"
     DisplayName: "End Time"
   SpritePath:
     Type: "System.String"
@@ -31,7 +31,7 @@ Config:
     DisplayName: "Frame Path"
   offset:
     Type: "OpenTK.Vector2"
-    Value: "320,400"
+    Value: "150,400"
   FaceOffset:
     Type: "OpenTK.Vector2"
     Value: "0,-300"
@@ -58,7 +58,7 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  033f8a35f01a4cbdb645fa341f091c68:
+  c28474645fe44af0ad74bae0d5174c7a:
     Name: "Overlay"
     OsbLayer: Background
     DiffSpecific: No
