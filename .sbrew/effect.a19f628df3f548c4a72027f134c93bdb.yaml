@@ -1,0 +1,40 @@
+﻿FormatVersion: 7
+Name: "MemoryFlash 5"
+Script: "MemoryFlash"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "100112"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb\\bg\\BG2_F.png"
+    DisplayName: "Sprite Path"
+    BeginsGroup: "Sprite"
+  Opacity:
+    Type: "System.Double"
+    Value: "1"
+  ScaleStart:
+    Type: "System.Double"
+    Value: "0.8"
+    DisplayName: "Scale Start"
+  ScaleEnd:
+    Type: "System.Double"
+    Value: "0.6"
+    DisplayName: "Scale End"
+  alternate:
+    Type: "System.Boolean"
+    Value: "False"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  749d687695d140a4b38e2841ab4ddde9:
+    Name: "MemoryFlash"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

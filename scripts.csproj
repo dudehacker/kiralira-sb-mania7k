@@ -56,6 +56,7 @@
     <Compile Include="BgMove.cs" />
     <Compile Include="BgRotate.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="Flash copy.cs" />
     <Compile Include="Flash.cs" />
     <Compile Include="Flash2.cs" />
     <Compile Include="FlashReverse.cs" />
